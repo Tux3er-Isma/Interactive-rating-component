@@ -1,0 +1,13 @@
+/*SCSS Files*/
+/*General Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
