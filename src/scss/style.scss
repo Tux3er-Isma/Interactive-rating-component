@@ -23,3 +23,10 @@ body{
 .light-body{
     background-color: variables.$white;
 }
+
+/*Responsive Mobile General Styles*/
+@media only screen and (max-width: 375px){
+    br{
+        display: none;
+    }
+}

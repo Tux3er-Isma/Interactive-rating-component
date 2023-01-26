@@ -240,3 +240,32 @@
         }
     }
 }
+
+/*Responsive Mobile Main Styles*/
+@media only screen and (max-width: 375px){
+    .main{
+
+        .main__card{
+            width: 330px;
+            height: 370px;
+
+            .main__card__number-container{
+                margin-left: 0;
+                width: 330px;
+            }
+
+            .main__card__btn-container{
+
+                .main__card__btn-container__btn{
+                    width: 310px;
+                    padding: 15px;
+                }
+            }
+        }
+
+        .main__submit{
+            width: 330px;
+            height: 370px;
+        }
+    }
+}
