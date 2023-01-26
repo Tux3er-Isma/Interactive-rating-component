@@ -1,3 +1,144 @@
+/*Variables*/
+/*Color Variables*/
+/*Font Variables*/
+/*SCSS Files*/
+/*Main Styles*/
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__card {
+  background-color: hsl(213deg, 19%, 18%);
+  font-family: sans-serif;
+  width: 370px;
+  height: 370px;
+  border-radius: 20px;
+}
+.main .main__card .main__card__mode-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__card .main__card__star-container {
+  background-color: hsl(203deg, 19%, 25%);
+  transition: background-color 0.5s;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  left: 20px;
+}
+.main .main__card .main__card__star-container:hover {
+  background-color: #fff;
+}
+.main .main__card .main__card__star-container .main__card__star-container__star:hover {
+  animation: star 1s forwards;
+}
+@keyframes star {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.main .main__card .main__card__moon-container {
+  display: none;
+  background-color: #fff;
+  transition: all 0.5s;
+  border: 1px solid #000;
+  position: relative;
+  left: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.main .main__card .main__card__moon-container:hover {
+  background-color: hsl(203deg, 19%, 25%);
+  border: 0px;
+}
+.main .main__card .main__card__moon-container .main__card__moon-container__moon:hover {
+  animation: moon 1s forwards;
+}
+@keyframes moon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.main .main__card .main__card__text-container .main__card__text-container__title {
+  color: #fff;
+  font-size: 25px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+.main .main__card .main__card__text-container .main__card__text-container__text {
+  color: hsl(216deg, 12%, 54%);
+  font-size: 15px;
+  margin-left: 25px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+.main .main__card .main__card__number-container {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+.main .main__card .main__card__number-container .main__card__number-container__numbers {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: hsl(203deg, 19%, 25%);
+  font-family: sans-serif;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.main .main__card .main__card__number-container .main__card__number-container__numbers:hover {
+  background-color: hsl(25deg, 97%, 53%);
+}
+.main .main__card .main__card__number-container .main__card__number-container__numbers:focus {
+  background-color: hsl(216deg, 12%, 54%);
+}
+.main .main__card .main__card__number-container .main__card__number-container__numbers--light {
+  background-color: #fff;
+  border: 2px solid hsl(216deg, 12%, 8%);
+  color: hsl(216deg, 12%, 8%);
+}
+.main .main__card .main__card__number-container .main__card__number-container__numbers--dark {
+  background-color: hsl(203deg, 19%, 25%);
+  color: #fff;
+}
+.main .main__card .main__card__btn-container {
+  display: flex;
+  justify-content: center;
+}
+.main .main__card .main__card__btn-container .main__card__btn-container__btn {
+  color: #fff;
+  background-color: hsl(25deg, 97%, 53%);
+  border: 0px;
+  width: 330px;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+.main .main__card .main__card__btn-container .main__card__btn-container__btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: hsl(25deg, 97%, 53%);
+}
+
 /*SCSS Files*/
 /*General Styles*/
 * {
@@ -8,6 +149,15 @@
 
 body {
   overflow: hidden;
+  transition: background-color 1s;
+}
+
+.dark-body {
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+.light-body {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
