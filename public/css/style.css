@@ -138,6 +138,64 @@
   background-color: #fff;
   color: hsl(25deg, 97%, 53%);
 }
+.main .main__submit {
+  background-color: hsl(213deg, 19%, 18%);
+  width: 370px;
+  height: 370px;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main .main__submit .main__submit__return {
+  transition: all 0.5s;
+  font-size: 30px;
+  color: #fff;
+  align-self: flex-start;
+  position: relative;
+  left: 20px;
+  margin-top: 10px;
+}
+.main .main__submit .main__submit__return:hover {
+  animation: return 1s forwards;
+}
+@keyframes return {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+.main .main__submit .main__submit__thumbnail-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main .main__submit .main__submit__selected-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(203deg, 19%, 25%);
+  border-radius: 50px;
+  width: 250px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.main .main__submit .main__submit__selected-container .main__submit__selected-container__text {
+  color: hsl(25deg, 97%, 53%);
+  font-size: 15px;
+}
+.main .main__submit .main__submit__text-container .main__submit__text-container__title {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.main .main__submit .main__submit__text-container .main__submit__text-container__text {
+  color: hsl(216deg, 12%, 54%);
+  font-size: 15px;
+  line-height: 20px;
+}
 
 /*SCSS Files*/
 /*General Styles*/
@@ -145,6 +203,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
