@@ -1,1 +1,24 @@
+/*SCSS Files*/
+@use 'variables';
+@use 'main';
+@use 'footer';
 
+/*General Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    transition: background-color 1s;
+}
+
+.dark-body{
+    background-color: variables.$very-dark-blue;
+}
+
+.light-body{
+    background-color: variables.$white;
+}
