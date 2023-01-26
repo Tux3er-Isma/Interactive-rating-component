@@ -4,6 +4,7 @@ const head = document.head;
 const body = document.body;
 
 //Main Variables
+//Card Variables
 const main = document.querySelector('main');
 const card = document.querySelector('.main__card');
 const numberContainer = document.querySelector('.main__card__number-container');
@@ -15,6 +16,13 @@ let star = document.querySelector('.main__card__star-container__star')
 const moonContainer = document.querySelector('.main__card__moon-container');
 let moon = document.querySelector('.main__card__moon-container__moon');
 let btn = document.querySelector('.main__card__btn-container__btn');
+
+//Submited Variables
+const submit = document.querySelector('.main__submit');
+const selectedContainer = document.querySelector('.main__submit__selected-container');
+let selected = document.querySelector('.main__submit__selected-container__text');
+let submitTitle = document.querySelector('.main__submit__text-container__title');
+let arrowLeft = document.querySelector('.main__submit__return');
 
 //Functions
 const createNumbers = () =>{
@@ -54,6 +62,13 @@ const changeToLightMode = () =>{
         element.classList.add('main__card__number-container__numbers--light');
         element.classList.remove('main__card__number-container__numbers--dark');
     });
+
+    submit.style.backgroundColor = '#fff';
+    submit.style.border = '2px solid #000';
+    submitTitle.style.color = '#000';
+    selectedContainer.style.backgroundColor = '#fff';
+    selectedContainer.style.border = '2px solid #000';
+    arrowLeft.style.color = '#000';
 }
 
 const changeToDarkMode = () =>{
@@ -73,6 +88,23 @@ const changeToDarkMode = () =>{
         element.classList.remove('main__card__number-container__numbers--light');
         element.classList.add('main__card__number-container__numbers--dark');
     });
+
+    submit.style.backgroundColor = 'hsl(213, 19%, 18%)';
+    submit.style.border = '0px';
+    submitTitle.style.color = '#fff';
+    selectedContainer.style.backgroundColor = 'hsl(203, 19%, 25%)';
+    selectedContainer.style.border = '0px';
+    arrowLeft.style.color = '#fff';
+};
+
+const submitOpinion = () =>{
+    card.style.display = 'none';
+    submit.style.display = 'flex';
+}
+
+const returnToCard = () =>{
+    card.style.display = 'block';
+    submit.style.display = 'none';
 }
 
 //Calling Functions
@@ -82,3 +114,12 @@ moonContainer.addEventListener('mouseover', hoverMoonContainer);
 moonContainer.addEventListener('mouseout', quitMoonContainer);
 starContainer.addEventListener('click', changeToLightMode);
 moonContainer.addEventListener('click', changeToDarkMode);
+
+numberArray.forEach(element =>{
+    element.addEventListener('click', () =>{
+        selected.innerHTML = `You selected ${element.innerHTML} out of 5`;
+    })
+})
+
+btn.addEventListener('click', submitOpinion)
+arrowLeft.addEventListener('click', returnToCard)
