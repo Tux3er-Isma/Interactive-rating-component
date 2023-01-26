@@ -1,0 +1,171 @@
+/*SCSS Files*/
+@use 'variables';
+
+/*Main Styles*/
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main__card{
+        background-color: variables.$dark-blue;
+        font-family: sans-serif;
+        width: 370px;
+        height: 370px;
+        border-radius: 20px;
+
+        .main__card__mode-container{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main__card__star-container{
+            background-color: variables.$number-bg-color;
+            transition: background-color .5s;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            position: relative;
+            left: 20px;
+
+            &:hover{
+                background-color: variables.$white;
+            }
+
+            .main__card__star-container__star{
+
+                &:hover{
+                    animation: star 1s forwards;
+
+                    @keyframes star{
+                        0%{
+                            transform: rotate(0deg);
+                        }
+    
+                        100%{
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .main__card__moon-container{
+            display: none;
+            background-color: variables.$white;
+            transition: all .5s;
+            border: 1px solid #000;
+            position: relative;
+            left: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+
+            &:hover{
+                background-color: variables.$number-bg-color;
+                border: 0px
+            }
+
+            .main__card__moon-container__moon{
+
+                &:hover{
+                    animation: moon 1s forwards;
+
+                    @keyframes moon{
+                        0%{
+                            transform: rotate(0deg);
+                        }
+
+                        100%{
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .main__card__text-container{
+
+            .main__card__text-container__title{
+                color: variables.$white;
+                font-size: 25px;
+                margin-left: 25px;
+                margin-bottom: 15px;
+            }
+
+            .main__card__text-container__text{
+                color: variables.$medium-gray;
+                font-size: 15px;
+                margin-left: 25px;
+                line-height: 20px;
+                margin-bottom: 25px;
+            }
+        }
+
+        .main__card__number-container{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            width: 350px;
+            margin-left: 10px;
+            margin-bottom: 30px;
+
+            .main__card__number-container__numbers{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: variables.$number-bg-color;
+                font-family: sans-serif;
+                color: variables.$white;
+                cursor: pointer;
+                transition: all .5s;
+
+                &:hover{
+                    background-color: variables.$orange;
+                }
+
+                &:focus{
+                    background-color: variables.$medium-gray;
+                }
+            }
+
+            .main__card__number-container__numbers--light{
+                background-color: variables.$white;
+                border: 2px solid variables.$very-dark-blue;
+                color: variables.$very-dark-blue;
+            }
+
+            .main__card__number-container__numbers--dark{
+                background-color: variables.$number-bg-color;
+                color: variables.$white;
+            }
+        }
+
+        .main__card__btn-container{
+            display: flex;
+            justify-content: center;
+
+            .main__card__btn-container__btn{
+                color: variables.$white;
+                background-color: variables.$orange;
+                border: 0px;
+                width: 330px;
+                padding: 10px;
+                border-radius: 50px;
+                transition: all .5s;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: variables.$white;
+                    color: variables.$orange;
+                }
+            }
+        }
+    }
+}
