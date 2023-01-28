@@ -24,8 +24,20 @@ body{
     background-color: variables.$white;
 }
 
+a{
+    text-decoration: none;
+
+    &:visited{
+        color: #ff0;
+    }
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
 /*Responsive Mobile General Styles*/
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 376px){
     br{
         display: none;
     }
