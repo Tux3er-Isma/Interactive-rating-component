@@ -4,9 +4,9 @@
   <a href="https://www.frontendmentor.io/home" target="_blank">Frontend Mentor Challenge</a>
 	<br>
 	<br>
-	<img src="https://github.com/Tux3er-Isma/QR-code-component/blob/master/public/assets/design/desktop-preview.jpg" width=800>
+	<img src="https://github.com/Tux3er-Isma/Interactive-rating-component/blob/master/public/assets/design/desktop-preview.jpg" width=800>
 	<br>
-	<p>This is a solution to the <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" target="_blank">QR Code Component</a> on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.</p>
+	<p>This is a solution to the <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI" target="_blank">Interactive rating component</a> on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.</p>
 </div>
 <br>
 <br>
