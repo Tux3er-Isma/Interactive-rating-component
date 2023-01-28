@@ -139,6 +139,5 @@ numberArray.forEach(element =>{
 
 btn.addEventListener('click', submitOpinion);
 arrowLeft.addEventListener('click', returnToCard);
-tux3er.addEventListener('click', showAuthor)
 
 console.log(a);
