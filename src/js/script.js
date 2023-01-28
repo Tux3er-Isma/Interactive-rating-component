@@ -2,6 +2,7 @@
 //General Variables
 const head = document.head;
 const body = document.body;
+const a = document.querySelectorAll('a');
 
 //Main Variables
 //Card Variables
@@ -23,6 +24,11 @@ const selectedContainer = document.querySelector('.main__submit__selected-contai
 let selected = document.querySelector('.main__submit__selected-container__text');
 let submitTitle = document.querySelector('.main__submit__text-container__title');
 let arrowLeft = document.querySelector('.main__submit__return');
+
+//Foter Variables
+const footer = document.querySelector('.footer');
+const tux3er = document.querySelector('.footer__tux3er');
+const authorInformation = document.querySelector('.footer__information-container');
 
 //Functions
 const createNumbers = () =>{
@@ -69,6 +75,11 @@ const changeToLightMode = () =>{
     selectedContainer.style.backgroundColor = '#fff';
     selectedContainer.style.border = '2px solid #000';
     arrowLeft.style.color = '#000';
+
+    //Footer
+    authorInformation.style.border = '1px solid #999'
+    authorInformation.style.backgroundColor = '#fff';
+    authorInformation.style.color = '#000';
 }
 
 const changeToDarkMode = () =>{
@@ -95,6 +106,11 @@ const changeToDarkMode = () =>{
     selectedContainer.style.backgroundColor = 'hsl(203, 19%, 25%)';
     selectedContainer.style.border = '0px';
     arrowLeft.style.color = '#fff';
+
+    //Footer
+    authorInformation.style.border = '1px solid #999'
+    authorInformation.style.backgroundColor = '#000';
+    authorInformation.style.color = '#fff';
 };
 
 const submitOpinion = () =>{
@@ -121,5 +137,8 @@ numberArray.forEach(element =>{
     })
 })
 
-btn.addEventListener('click', submitOpinion)
-arrowLeft.addEventListener('click', returnToCard)
+btn.addEventListener('click', submitOpinion);
+arrowLeft.addEventListener('click', returnToCard);
+tux3er.addEventListener('click', showAuthor)
+
+console.log(a);
