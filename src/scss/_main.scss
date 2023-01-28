@@ -3,7 +3,7 @@
 
 /*Main Styles*/
 .main{
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +242,7 @@
 }
 
 /*Responsive Mobile Main Styles*/
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 376px){
     .main{
 
         .main__card{
