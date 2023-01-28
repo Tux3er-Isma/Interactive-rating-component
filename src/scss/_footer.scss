@@ -47,3 +47,17 @@
         }
     }
 }
+
+/*Responsive Mobile Footer Styles*/
+@media only screen and (max-width: 480px){
+    .footer{
+
+        .footer__information-container{
+            width: 300px;
+
+            .footer__information-container__author{
+                font-size: 13.5px;
+            }
+        }
+    }
+}
