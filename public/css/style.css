@@ -4,7 +4,7 @@
 /*SCSS Files*/
 /*Main Styles*/
 .main {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,7 +198,7 @@
 }
 
 /*Responsive Mobile Main Styles*/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
   .main .main__card {
     width: 330px;
     height: 370px;
@@ -214,6 +214,58 @@
   .main .main__submit {
     width: 330px;
     height: 370px;
+  }
+}
+/*SCSS Files*/
+/*Footer Styles*/
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer .footer__tux3er {
+  width: 50px;
+}
+.footer .footer__information-container {
+  width: 400px;
+  color: #fff;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(11.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer .footer__information-container .footer__information-container__author {
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 350px;
+  animation: typing 2s steps(150), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*Responsive Mobile Footer Styles*/
+@media only screen and (max-width: 480px) {
+  .footer .footer__information-container {
+    width: 300px;
+  }
+  .footer .footer__information-container .footer__information-container__author {
+    font-size: 13.5px;
   }
 }
 /*SCSS Files*/
@@ -238,8 +290,18 @@ body {
   background-color: #fff;
 }
 
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #ff0;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 /*Responsive Mobile General Styles*/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
   br {
     display: none;
   }
