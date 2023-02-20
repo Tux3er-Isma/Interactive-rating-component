@@ -34,6 +34,7 @@
 
             &:hover{
                 background-color: variables.$white;
+                cursor: pointer;
             }
 
             .main__card__star-container__star{
@@ -73,6 +74,7 @@
 
                 &:hover{
                     animation: moon 1s forwards;
+                    cursor: pointer;
 
                     @keyframes moon{
                         0%{
