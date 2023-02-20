@@ -1,0 +1,20 @@
+{
+  "name": "interative-rating-component",
+  "version": "1.1.0",
+  "description": "Frontend mentor challenge",
+  "main": "/src/js/script.js",
+  "scripts": {
+    "sass": "sass --watch src/scss/style.scss public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tux3er-Isma/Interactive-rating-component.git"
+  },
+  "keywords": [],
+  "author": "Tux3er-Isma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tux3er-Isma/Interactive-rating-component/issues"
+  },
+  "homepage": "https://github.com/Tux3er-Isma/Interactive-rating-component#readme"
+}

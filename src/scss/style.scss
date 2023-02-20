@@ -26,6 +26,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #ff0;
 
     &:visited{
         color: #ff0;
@@ -37,7 +38,7 @@ a{
 }
 
 /*Responsive Mobile General Styles*/
-@media only screen and (max-width: 376px){
+@media only screen and (max-width: 480px){
     br{
         display: none;
     }

@@ -34,6 +34,7 @@
 
             &:hover{
                 background-color: variables.$white;
+                cursor: pointer;
             }
 
             .main__card__star-container__star{
@@ -73,6 +74,7 @@
 
                 &:hover{
                     animation: moon 1s forwards;
+                    cursor: pointer;
 
                     @keyframes moon{
                         0%{
@@ -159,11 +161,21 @@
                 padding: 10px;
                 border-radius: 50px;
                 transition: all .5s;
+                cursor: pointer;
 
                 &:hover{
-                    cursor: pointer;
                     background-color: variables.$white;
                     color: variables.$orange;
+                }
+            }
+
+            .main__card__btn-container__error-btn{
+                cursor: none;
+
+                &:hover{
+                    cursor: no-drop;
+                    background-color: variables.$medium-gray;
+                    color: variables.$white;
                 }
             }
         }
@@ -258,7 +270,6 @@
 
                 .main__card__btn-container__btn{
                     width: 310px;
-                    padding: 15px;
                 }
             }
         }
