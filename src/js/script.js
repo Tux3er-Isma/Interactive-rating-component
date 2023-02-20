@@ -122,7 +122,7 @@ const returnToCard = () =>{
     card.style.display = 'block';
     submit.style.display = 'none';
     btn.classList.add('main__card__btn-container__error-btn');
-    location.reload();
+    btn.removeEventListener('click', submitOpinion);
 }
 
 //Calling Functions
