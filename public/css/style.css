@@ -34,6 +34,7 @@
 }
 .main .main__card .main__card__star-container:hover {
   background-color: #fff;
+  cursor: pointer;
 }
 .main .main__card .main__card__star-container .main__card__star-container__star:hover {
   animation: star 1s forwards;
@@ -62,6 +63,7 @@
 }
 .main .main__card .main__card__moon-container .main__card__moon-container__moon:hover {
   animation: moon 1s forwards;
+  cursor: pointer;
 }
 @keyframes moon {
   0% {
@@ -132,11 +134,19 @@
   padding: 10px;
   border-radius: 50px;
   transition: all 0.5s;
+  cursor: pointer;
 }
 .main .main__card .main__card__btn-container .main__card__btn-container__btn:hover {
-  cursor: pointer;
   background-color: #fff;
   color: hsl(25deg, 97%, 53%);
+}
+.main .main__card .main__card__btn-container .main__card__btn-container__error-btn {
+  cursor: none;
+}
+.main .main__card .main__card__btn-container .main__card__btn-container__error-btn:hover {
+  cursor: no-drop;
+  background-color: hsl(216deg, 12%, 54%);
+  color: #fff;
 }
 .main .main__submit {
   background-color: hsl(213deg, 19%, 18%);
@@ -292,6 +302,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #ff0;
 }
 a:visited {
   color: #ff0;
