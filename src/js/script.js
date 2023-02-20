@@ -121,6 +121,8 @@ const submitOpinion = () =>{
 const returnToCard = () =>{
     card.style.display = 'block';
     submit.style.display = 'none';
+    btn.classList.add('main__card__btn-container__error-btn');
+    location.reload();
 }
 
 //Calling Functions
@@ -134,10 +136,10 @@ moonContainer.addEventListener('click', changeToDarkMode);
 numberArray.forEach(element =>{
     element.addEventListener('click', () =>{
         selected.innerHTML = `You selected ${element.innerHTML} out of 5`;
+        btn.classList.remove('main__card__btn-container__error-btn');
+        btn.addEventListener('click', submitOpinion);
     })
 })
 
-btn.addEventListener('click', submitOpinion);
-arrowLeft.addEventListener('click', returnToCard);
 
-console.log(a);
+arrowLeft.addEventListener('click', returnToCard);
