@@ -161,11 +161,21 @@
                 padding: 10px;
                 border-radius: 50px;
                 transition: all .5s;
+                cursor: pointer;
 
                 &:hover{
-                    cursor: pointer;
                     background-color: variables.$white;
                     color: variables.$orange;
+                }
+            }
+
+            .main__card__btn-container__error-btn{
+                cursor: none;
+
+                &:hover{
+                    cursor: no-drop;
+                    background-color: variables.$medium-gray;
+                    color: variables.$white;
                 }
             }
         }
