@@ -219,7 +219,6 @@
   }
   .main .main__card .main__card__btn-container .main__card__btn-container__btn {
     width: 310px;
-    padding: 15px;
   }
   .main .main__submit {
     width: 330px;
@@ -312,7 +311,7 @@ a:hover {
 }
 
 /*Responsive Mobile General Styles*/
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 480px) {
   br {
     display: none;
   }
