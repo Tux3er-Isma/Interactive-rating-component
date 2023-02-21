@@ -19,6 +19,9 @@
 - [Preview](#preview)
    - [Desktop 🖥️](#desktop-preview)
    - [Mobile 📱](#mobile-preview)
+- [Versions](#versions)
+   - [Version 1.0.0](#version-1.0.0)
+   - [Version 1.1.0](#version-1.1.0)
 - [Live](#live)
 - [Overview](#overview)
    - [The Challenge](#the-challenge)
@@ -31,8 +34,22 @@
 ### Mobile-Preview
 ![](https://github.com/Tux3er-Isma/Interactive-rating-component/blob/main/public/assets/design/mobile-thank-you-state.jpg)
 
+# Versions
+## Version-1.0.0
+- 🔴 Package.json file
+- 🔴 Responsive Design
+- 🔴 Form validation
+- 🔴 Markdown Readme.md
+
+## Version-1.1.0
+- 🟢 Package.json file
+- 🟢 Responsive Design
+- 🟢 Form validation
+- 🟢 Markdown Readme.md
+
+
 # Live
-Site url: https://duolingo-frontend-clone.netlify.app/
+Site url 🔴: https://interactive-rating-component-tux3er.netlify.app/
 
 # Overview
 ### The-Challenge
